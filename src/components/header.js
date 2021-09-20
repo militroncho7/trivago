@@ -1,42 +1,43 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import React from 'react'
+import { css } from '@emotion/react';
+import { Link } from 'gatsby';
+import Navegacion from './nav';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+const Header = () => {
+    return (
+        <header
+            css={css`
+                background-color: #FFF;
+                padding: 0.5rem;
+            `}
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+            <div
+                css={css`
+                    max-width: 1200px;
+                    margin: 0 auto;
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+                    @media (min-width: 768px) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                `
+                }
+            >
+                {/* <h1
+                    css={css`
+                        color: #FFF;
+                        text-align: center;
+                    `}
+                >Hotel Trivago</h1> */}
+                <Link to={'/'}>
+                <img src='https://res.cloudinary.com/dhd9jgrw3/image/upload/v1631889390/Trivago/Trivago-logo_1_h3bgne.png' />
+                </Link>
+                
+                <Navegacion />
+            </div>
+        </header>
+    );
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+ 
+export default Header;
