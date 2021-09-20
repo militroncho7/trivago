@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    'gatsby-plugin-emotion',
+    "gatsby-plugin-emotion",
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -32,7 +32,9 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-datocms`,
-      apiToken: `688d068095f5e35413afc3d36d58dc`
-    }
+      options: {
+        apiToken: `688d068095f5e35413afc3d36d58dc`
+      }
+    },
   ],
 }

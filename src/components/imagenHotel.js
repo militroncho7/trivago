@@ -16,6 +16,7 @@ const TextoImagen = styled.div`
     flex: 1;
     align-items: center;
     justify-content: center;
+    text-align: center;
     h1 {
         font-size: 3rem;
         margin: 0%;

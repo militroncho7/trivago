@@ -2,6 +2,15 @@ import React from 'react'
 import { css } from '@emotion/react';
 import { Link } from 'gatsby';
 import Navegacion from './nav';
+import styled from '@emotion/styled';
+
+const Logo = styled.div`
+     @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+`;
 
 const Header = () => {
     return (
@@ -24,16 +33,12 @@ const Header = () => {
                 `
                 }
             >
-                {/* <h1
-                    css={css`
-                        color: #FFF;
-                        text-align: center;
-                    `}
-                >Hotel Trivago</h1> */}
-                <Link to={'/'}>
-                <img src='https://res.cloudinary.com/dhd9jgrw3/image/upload/v1631889390/Trivago/Trivago-logo_1_h3bgne.png' />
-                </Link>
-                
+                <Logo>
+                    <Link to={'/'}>
+                        <img src='https://res.cloudinary.com/dhd9jgrw3/image/upload/v1631889390/Trivago/Trivago-logo_1_h3bgne.png' />
+                    </Link>  
+                </Logo>            
+                               
                 <Navegacion />
             </div>
         </header>
