@@ -7,7 +7,7 @@ import { css } from '@emotion/react';
 const TextoInicio = styled.div`
     padding-top: 3rem;
     max-width: 1200px;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 
     @media (min-width: 768px) {
