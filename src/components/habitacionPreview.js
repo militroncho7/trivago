@@ -22,6 +22,12 @@ const Boton = styled(Link)`
     }
 `;
 
+const EnlaceHome = styled(Link)`
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+`;
+
 const HabitacionPreview = ({habitacion}) => {
 
     const { contenido, imagen, titulo, slug } = habitacion;
@@ -33,20 +39,23 @@ const HabitacionPreview = ({habitacion}) => {
                 margin-bottom: 2rem;
             `}
         >
-            <Image
-                fluid={imagen.fluid}
-            />
+            <Link to={slug}>
+                <Image fluid={imagen.fluid} />
+            </Link>
             <div
                 css={css`
                     padding: 3rem;
                 `}
             >
-                <h3
-                    css={css`
-                        font-size: 1.6rem;
-                    `}
-                >{titulo}</h3>
-                <p>{contenido}</p>
+                <EnlaceHome to={slug}>
+                    <h3
+                        css={css`
+                            font-size: 1.6rem;
+                        `}
+                    
+                    >{titulo}</h3>
+                </EnlaceHome>
+                    <p>{contenido}</p>
 
                 <Boton to={slug}>Ver Habitación</Boton>
             </div>

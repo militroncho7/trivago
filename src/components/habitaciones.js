@@ -1,5 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Image from 'gatsby-image'
+import { css } from "@emotion/react"
+import Layout from "../components/layout"
 
 export const query = graphql`
   query ($slug: String!) {
@@ -15,13 +18,34 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-const HabitacionTemplate = ({data}) => {
-    
-    console.log(data);
-    
-    return <h1>Habitacion.js</h1>
+const HabitacionTemplate = ({ data: {allDatoCmsHabitacion: { nodes } } }) => {
+  
+    const { titulo, contenido, imagen } = nodes[0];
+
+  return (
+      <Layout>
+          <main
+            css={css`
+                margin: 0 auto;
+                max-width: 1200px;
+                width: 90%;
+            `}
+          >
+            <h2
+                css={css`
+                    text-align: center;
+                    margin-top: 3rem;
+                `}
+            >{titulo}</h2>
+            <p>{contenido}</p>
+            <Image
+                fluid={imagen.fluid}
+            />
+          </main>
+      </Layout>
+  )
 }
 
 export default HabitacionTemplate

@@ -1,8 +1,8 @@
 import React from 'react'
 import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import Navegacion from './nav';
-import styled from '@emotion/styled';
 
 const Logo = styled.div`
      @media (max-width: 768px) {
