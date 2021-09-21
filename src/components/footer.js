@@ -37,10 +37,10 @@ const Footer = () => {
             <p
                 css={css`
                     text-align:center;
-                    background-color: #007eb4;
+                    background-color: #086187;
                     color: #FFF;
                     margin: 0;
-                    padding-bottom: 1rem;
+                    padding: 0.3rem;
                 `}
             >Todos los derechos reservados</p>
         </>
