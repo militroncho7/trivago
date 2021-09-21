@@ -3,36 +3,47 @@ import { css } from '@emotion/react';
 
 const Footer = () => {
 
-    const date = new Date().getFullYear();
+    const year = new Date().getFullYear();
 
     return (
-        <div
-            css={css`
-            background-color: #007eb4;
-            width: 100%;
-            padding: 1rem;
-            margin: 0 auto;
-            margin-top: 7rem;
-            bottom: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        <>
+            <footer
+                css={css`
+                background-color: #007eb4;
+                width: 100%;
+                padding: 1rem;
+                margin: 0 auto;
+                margin-top: 7rem;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-            p {
-                color: #FFF;
-            }       
-            img {
-                max-width: 50px;
-            } 
-    `}
-        >
-            <p>Designed by <span>Víctor Ruiz &copy;</span> {date}</p>
-            <a href="https://www.linkedin.com/in/victormmorales/">
-                
-            <img src="https://res.cloudinary.com/dhd9jgrw3/image/upload/v1610448149/Logos%20VR/LOGO_VR_Blanco_kzklcb.png" alt="logo-vr"/>
-            </a>
-        </div>
+                p {
+                    color: #FFF;
+                }       
+                img {
+                    max-width: 50px;
+                } 
+        `}
+            >
+                <p>Designed by <span>Víctor Ruiz &copy;</span> {year}</p>
+                <a href="https://www.linkedin.com/in/victormmorales/">
+                    
+                <img src="https://res.cloudinary.com/dhd9jgrw3/image/upload/v1610448149/Logos%20VR/LOGO_VR_Blanco_kzklcb.png" alt="logo-vr"/>
+                </a>
+            </footer>
+            <p
+                css={css`
+                    text-align:center;
+                    background-color: #007eb4;
+                    color: #FFF;
+                    margin: 0;
+                    padding-bottom: 1rem;
+                `}
+            >Todos los derechos reservados</p>
+        </>
     );
 }
  

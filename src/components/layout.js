@@ -3,9 +3,17 @@ import Helmet from 'react-helmet';
 import { Global, css } from '@emotion/react';
 import Header from './header';
 import Footer from './footer';
+import useSeo from '../hooks/use-seo';
 
 
 const Layout = (props) => {
+    
+    const seo = useSeo();
+
+    console.log(seo)
+
+    const { siteName, fallbackSeo: { description, title } } = seo;
+
     return (
         <>
             <Global
@@ -41,7 +49,8 @@ const Layout = (props) => {
                 `}
             />
             <Helmet>
-                <title>Trivago 👋🏻</title>
+                <title>{title} </title>
+                <meta name="description" content={description} />
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
             </Helmet>
@@ -49,7 +58,7 @@ const Layout = (props) => {
             <Header />
             {props.children}
 
-            <Footer/>
+            <Footer />
        </>
     );
 }
