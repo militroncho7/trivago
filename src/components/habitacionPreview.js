@@ -18,7 +18,7 @@ const Boton = styled(Link)`
     text-align: center;
 
     &:hover {
-        background-color: #fea63b;
+        background-color: #e48006;
     }
 `;
 
