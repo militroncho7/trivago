@@ -1,8 +1,15 @@
 ![Trivago ✈️](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1631889390/Trivago/Trivago-logo_1_h3bgne.png)
 
-App web que recrea la web de un hotel. En ella podemos ver las diferetnes habitaciones, conocer más sobre ellos, etc...  Una web con una potente performance y una carga rápida con imágenes de alta resolución gracias a la pontencia de Gatsby. 
+App web que recrea la web de un hotel. Una web con una potente performance y una carga rápida con imágenes de alta resolución gracias a la pontencia de Gatsby.
+
 
 [Trivago ✈️](https://trivago-hotel.netlify.app/).
+
+El principal beneficio de construir un sitio estático con Gatsby es la velocidad. Al no tener que consultar las bases de datos, los sitios estáticos son casi instantáneos. Además, ya están renderizados y preparados para cuando el usuario lo requiera.
+
+Los sitios estáticos son rápidos, pues no consultan nada a la base de datos, además ya están renderizados y listos para cuando el usuario los necesite, básicamente son instantáneos, no ejecutan ningún código del lado del servidor. Tienen facilidad al hospedarlos, prácticamente sin configuración.
+
+Tiene mucha estabilidad, son mucho más fáciles de escalar, al no tener que consultar una base de datos; solo es servir HTML ,JS, CSS.
 
 ## Sitio Web
 ---
