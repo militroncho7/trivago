@@ -2,6 +2,7 @@
 
 App web que recrea la web de un hotel. Una web con una potente performance y una carga rápida con imágenes de alta resolución gracias a la pontencia de Gatsby.
 
+![Sitio web](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1632235594/Trivago/trivago1_k8dowb.png)
 
 [Trivago ✈️](https://trivago-hotel.netlify.app/).
 
@@ -13,7 +14,6 @@ Tiene mucha estabilidad, son mucho más fáciles de escalar, al no tener que con
 
 ## Sitio Web
 ---
-![Sitio web](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1632235594/Trivago/trivago1_k8dowb.png)
 
 App realizada mediante la libería React, Gatsby, DatoCMS como backend.
 
